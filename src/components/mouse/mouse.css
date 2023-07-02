@@ -1,0 +1,9 @@
+.cursor {
+    pointer-events: none;
+    position: fixed;
+    padding: 0.15rem;
+    background-color: #ffffff9c;
+    border-radius: 50%;
+    mix-blend-mode: difference;
+    transition: transform ease;
+}

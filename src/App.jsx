@@ -1,9 +1,16 @@
-import { useState } from 'react'
-import Navbar from './components/Navbar'
+import { useState, useEffect, useRef } from 'react'
+import Navbar from './components/navbar/Navbar'
+import Mouse from './components/mouse/mouse'
+import { HoverContextProvider } from './utils/HoverContext'
 
 function App() {
   return (
-    <Navbar />
+    <>
+      <HoverContextProvider>
+        <Navbar />
+        <Mouse />
+      </HoverContextProvider>
+    </>
   )
 }
 
