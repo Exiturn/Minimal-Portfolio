@@ -11,7 +11,7 @@ const Mouse = () => {
     useEffect(() => {
         if (isHovered) {
             gsap.to('.cursor', {
-                scale: 8,
+                scale: 9,
                 duration: 0.5,
             });
         } else {
