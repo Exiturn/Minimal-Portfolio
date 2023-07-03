@@ -15,13 +15,20 @@ const HoverContextProvider = ({ children }) => {
     };
 
     const handleMouseMove = (event) => {
-        const { pageX, pageY } = event;
-        setCursorPosition({ x: pageX, y: pageY });
+        const { clientX, clientY } = event;
+        setCursorPosition({ x: clientX, y: clientY });
     };
 
     useEffect(() => {
         console.log('isHovered is', isHovered);
     }, [isHovered]);
+
+    useEffect(() => {
+        window.addEventListener('mousemove', handleMouseMove);
+        return () => {
+          window.removeEventListener('mousemove', handleMouseMove);
+        };
+      }, []);
 
     return (
         <HoverContext.Provider onMouseMove={handleMouseMove} value={{ isHovered, handleHover, handleLeave, cursorPosition }}>
