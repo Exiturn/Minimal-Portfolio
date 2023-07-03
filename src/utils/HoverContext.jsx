@@ -1,27 +1,30 @@
-import React, { createContext, useState } from 'react';
+import React, { createContext, useEffect, useState } from 'react';
 
 const HoverContext = createContext();
 
 const HoverContextProvider = ({ children }) => {
-    const [isHovered, setIsHovered] = useState();
+    const [isHovered, setIsHovered] = useState(false);
     const [cursorPosition, setCursorPosition] = useState({ x: 0, y: 0 });
 
     const handleHover = () => {
-        setIsHovered(false);
+        setIsHovered(!isHovered);
     };
 
     const handleLeave = () => {
-        setIsHovered(true);
+        setIsHovered(!isHovered);
     };
 
     const handleMouseMove = (event) => {
-        const { clientX, clientY } = event;
-        setCursorPosition({ x: clientX, y: clientY });
-        // console.log('cursorPosition is', cursorPosition);
-      };
+        const { pageX, pageY } = event;
+        setCursorPosition({ x: pageX, y: pageY });
+    };
+
+    useEffect(() => {
+        console.log('isHovered is', isHovered);
+    }, [isHovered]);
 
     return (
-        <HoverContext.Provider value={{ isHovered, handleHover, handleLeave, cursorPosition }}>
+        <HoverContext.Provider onMouseMove={handleMouseMove} value={{ isHovered, handleHover, handleLeave, cursorPosition }}>
             <div onMouseMove={handleMouseMove}>
                 {children}
             </div>

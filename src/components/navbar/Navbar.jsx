@@ -1,4 +1,4 @@
-import React, { useContext, useState } from 'react'
+import React, { useContext, useState, useEffect } from 'react'
 import { HiMenu, HiX } from "react-icons/hi";
 import avatar from '../../assets/avatar.svg';
 import './Navbar.css';
@@ -18,13 +18,11 @@ const Navbar = () => {
     const handleMouseEnter = () => {
         handleHover();
         console.log('handleMouseEnter called');
-        console.log('isHovered is', isHovered);
     }
 
     const handleMouseLeave = () => {
         handleLeave();
         console.log('handleMouseLeave called');
-        console.log('isHovered is', isHovered);
     }
 
     return (
@@ -34,9 +32,9 @@ const Navbar = () => {
 
                 <ul className='md:flex flex-row justify-center items-center hidden gap-12'>
                     <li onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} className='link transition duration-[0.3s] ease-in-out cursor-pointer'>About</li>
-                    <li className='link transition duration-[0.3s] ease-in-out cursor-pointer'>Works</li>
-                    <li className='link transition duration-[0.3s] ease-in-out cursor-pointer'>Skills</li>
-                    <li className='link transition duration-[0.3s] ease-in-out cursor-pointer'>Contact Me</li>
+                    <li onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} className='link transition duration-[0.3s] ease-in-out cursor-pointer'>Works</li>
+                    <li onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} className='link transition duration-[0.3s] ease-in-out cursor-pointer'>Skills</li>
+                    <li onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} className='link transition duration-[0.3s] ease-in-out cursor-pointer'>Contact Me</li>
                 </ul>
 
                 <div className='cursor-pointer block md:hidden' onClick={handleNav}>

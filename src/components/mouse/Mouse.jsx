@@ -1,4 +1,4 @@
-import React, { useContext } from 'react'
+import React, { useContext, useEffect } from 'react'
 import { gsap } from 'gsap';
 import './mouse.css'
 
@@ -8,22 +8,35 @@ const Mouse = () => {
     const { isHovered, cursorPosition } = React.useContext(HoverContext);
     const { x, y } = cursorPosition;
 
+    useEffect(() => {
+        if (isHovered) {
+            gsap.to('.cursor', {
+                scale: 8,
+                duration: 0.5,
+            });
+        } else {
+            gsap.to('.cursor', {
+                scale: 1,
+                duration: 0.5,
+            });
+        }
+    }, [isHovered])
+
     const cursorStyle = {
         pointerEvents: 'none',
         position: 'fixed',
+        top: '0',
+        left: '0',
         padding: '0.3rem',
         backgroundColor: '#fff',
         borderRadius: '50%',
         mixBlendMode: 'difference',
-        transitionDuration: '5s',
-        transitionProperty: 'scale',
-        transform: `scale(${isHovered ? 10 : 1})`,
     }
 
     const updateCursor = () => {
         gsap.to('.cursor', {
-            x: x - 5,
-            y: y - 100,
+            x: x,
+            y: y,
             duration: 0.15,
         })
     }
