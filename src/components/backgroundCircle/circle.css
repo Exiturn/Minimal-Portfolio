@@ -68,7 +68,7 @@
     color: #266f3b;
     top: 50%;
     left: 29%;
-    animation-duration: 134s;
+    animation-duration: infinite;
     animation-delay: -115s;
     transform-origin: -14vw 20vh;
     box-shadow: 80vmin 0 10.884139205129333vmin currentColor;

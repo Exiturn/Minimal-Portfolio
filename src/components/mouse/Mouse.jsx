@@ -11,13 +11,13 @@ const Mouse = () => {
     useEffect(() => {
         if (isHovered) {
             gsap.to('.cursor', {
-                scale: 9,
-                duration: 0.5,
+                scale: 10.5,
+                duration: 0.35,
             });
         } else {
             gsap.to('.cursor', {
                 scale: 1,
-                duration: 0.5,
+                duration: 0.35,
             });
         }
     }, [isHovered])
@@ -27,7 +27,7 @@ const Mouse = () => {
         position: 'fixed',
         top: '0',
         left: '0',
-        padding: '0.3rem',
+        padding: '0.25rem',
         backgroundColor: '#fff',
         borderRadius: '50%',
         mixBlendMode: 'difference',

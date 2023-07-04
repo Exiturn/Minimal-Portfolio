@@ -23,4 +23,6 @@
 * {
   margin: 0;
   cursor: none;
+  overflow-x: hidden;
+  font-size: 1rem;
 }
