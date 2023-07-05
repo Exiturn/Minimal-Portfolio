@@ -4,16 +4,23 @@ import Mouse from './components/mouse/mouse'
 import { HoverContextProvider } from './utils/HoverContext'
 import Circle from './components/backgroundCircle/Circle'
 import Hero from './components/hero/Hero'
+import About from './components/about/About'
+import Works from './components/works/Works'
+import Skills from './components/skills/Skills'
 
 function App() {
   return (
     <>
-      <HoverContextProvider>
-        <Navbar />
-        <Mouse />
-        <Hero />
-      </HoverContextProvider>
-      <Circle />
+      <div>
+        <HoverContextProvider>
+          <Navbar />
+          <Mouse />
+          <Hero />
+          <About />
+          <Skills />
+        </HoverContextProvider>
+        <Circle />
+      </div>
     </>
   )
 }
