@@ -31,6 +31,7 @@ const Mouse = () => {
         backgroundColor: '#fff',
         borderRadius: '50%',
         mixBlendMode: 'difference',
+        zIndex: '9999',
     }
 
     const updateCursor = () => {

@@ -18,6 +18,7 @@ function App() {
           <Hero />
           <About />
           <Skills />
+          <Works />
         </HoverContextProvider>
         <Circle />
       </div>

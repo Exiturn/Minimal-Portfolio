@@ -10,7 +10,7 @@ const Hero = () => {
     ]
 
     return (
-        <div id='/' className='flex flex-col justify-center items-start mt-[3vh] px-5 md:px-[10vw] w-[100vw] h-[80vh] overflow-hidden z-1'>
+        <div id='/' className='flex flex-col justify-center items-start mt-[3vh] px-5 md:px-[10vw] w-[100vw] h-[85vh] overflow-hidden z-1'>
             <h1 className='md:hidden block font-medium'>
                 <TypeAnimation
                     style={{
