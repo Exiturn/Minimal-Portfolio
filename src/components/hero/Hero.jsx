@@ -11,7 +11,7 @@ const Hero = () => {
 
     return (
         <div id='/' className='flex flex-col justify-center items-start mt-[3vh] px-5 md:px-[10vw] w-[100vw] h-[85vh] overflow-hidden z-1'>
-            <h1 className='md:hidden block font-medium'>
+            <h1 className='md:hidden block'>
                 <TypeAnimation
                     style={{
                         fontSize: `3.15rem`,
@@ -30,7 +30,7 @@ const Hero = () => {
                 />
             </p>
 
-            <h1 className='hidden md:block font-medium'>
+            <h1 className='hidden md:block'>
                 <TypeAnimation
                     style={{
                         fontSize: `6rem`,

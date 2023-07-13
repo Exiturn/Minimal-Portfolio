@@ -1,5 +1,5 @@
 import React, { useContext, useState, useEffect } from 'react'
-import { HiMenu, HiX } from "react-icons/hi";
+import { CgMenuGridR, CgClose } from "react-icons/cg";
 import avatar from '../../assets/avatar.svg';
 import { gsap } from 'gsap';
 import './Navbar.css';
@@ -58,7 +58,7 @@ const Navbar = () => {
                 </ul>
 
                 <div className='cursor-pointer block md:hidden' onClick={handleNav}>
-                    {!isOpen ? <HiMenu size={30} /> : <HiX size={30} />}
+                    {!isOpen ? <CgMenuGridR size={30} /> : <CgClose size={30} />}
                 </div>
 
                 <div className={`fixed h-[100vh] overflow-x-hidden left-0 top-0 w-[14rem] border-r border-r-gray-900 bg-[#000300] transform transition-all duration-500 z-30
