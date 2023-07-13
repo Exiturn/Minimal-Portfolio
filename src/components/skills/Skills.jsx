@@ -4,11 +4,12 @@ import * as Icons from '../../assets/icons.js'
 
 const Skills = () => {
     return (
-        <div id='Skills' className='flex flex-col justify-start items-start mt-[4vh] px-5 md:px-[10vw] w-[100vw] h-[100vh] md:h-[70vh] overflow-hidden'>
+        <div id='Skills' className='flex flex-col justify-start items-start mt-[4vh] px-5 md:px-[10vw] w-[100vw] my-10 md:h-[70vh] overflow-hidden'>
             <h1 className='text-[3rem] font-medium'>Skills</h1>
             <div className='w-full border-b-2 border-stone-500' />
             <p className='mt-3 w-full'>Aside from my university education, I have been digging into online courses about <span className='text-[#4ABF6C] font-medium'>UI/UX Design</span> and cultivating an aesthetic that I want to explore deeper.
-                I have also been teaching myself <span className='text-[#4ABF6C] font-medium'>React.js with TypeScript</span> by completing smaller projects such as my blog application.</p>
+                I have also been teaching myself <span className='text-[#4ABF6C] font-medium'>React.js with TypeScript</span> by completing smaller projects such as my blog application.
+                <br /><br /> With UI/UX design, I have also been getting stuck into 3D web animations using Spline and adding that into my design implementation.</p>
 
             <div className='grid md:grid-cols-3 lg:grid-cols-5 grid-cols-2 justify-start items-start gap-x-[3.5rem] md:gap-x-[2rem] xl:gap-x-[8rem] gap-y-[2rem] mt-10'>
                 <div className='flex flex-row justify-start items-center gap-2 w-auto h-auto'>

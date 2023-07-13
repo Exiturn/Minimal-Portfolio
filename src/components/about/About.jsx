@@ -2,7 +2,7 @@ import React from 'react'
 
 const About = () => {
     return (
-        <div id='About' className='flex flex-col justify-start items-start mt-[4vh] px-5 md:px-[10vw] w-[100vw] h-[100vh] md:h-[50vh] overflow-hidden'>
+        <div id='About' className='flex flex-col justify-start items-start mt-[4vh] px-5 md:px-[10vw] w-[100vw] xs:h-[100vh] md:h-[50vh] overflow-hidden'>
             <h1 className='text-[3rem] font-medium'>About</h1>
             <div className='w-full border-b-2 border-stone-500' />
             <p className='mt-3 w-full'>I am a web developer by trade but a longing creative at heart. Growing up I never really had a creative outlet. Although I did place third in a  Yu-Gi-Oh! card art competition where my sister drew the majority of it. Anyways, front-end development is my creative outlet. A way for me to continuously inspire and elevate myself to be a creative mind, younger me would be in awe of.

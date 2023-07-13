@@ -19,6 +19,10 @@ const HoverContextProvider = ({ children }) => {
         setCursorPosition({ x: clientX, y: clientY });
     };
 
+    const handleClick = () => {
+        setIsHovered(false);
+    };
+
     useEffect(() => {
         console.log('isHovered is', isHovered);
     }, [isHovered]);
@@ -31,7 +35,7 @@ const HoverContextProvider = ({ children }) => {
       }, []);
 
     return (
-        <HoverContext.Provider onMouseMove={handleMouseMove} value={{ isHovered, handleHover, handleLeave, cursorPosition }}>
+        <HoverContext.Provider onMouseMove={handleMouseMove} value={{ isHovered, handleHover, handleLeave, cursorPosition, handleClick }}>
             <div onMouseMove={handleMouseMove}>
                 {children}
             </div>

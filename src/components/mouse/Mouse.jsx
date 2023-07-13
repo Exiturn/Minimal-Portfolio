@@ -42,7 +42,10 @@ const Mouse = () => {
         })
     }
 
+   
     updateCursor();
+   
+
     return (
         <div className={`hidden md:block cursor`} style={cursorStyle}></div>
     )
