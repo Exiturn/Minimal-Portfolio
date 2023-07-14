@@ -12,26 +12,26 @@ const Works = () => {
     useEffect(() => {
         const interval = setInterval(() => {
             setSlide(slide === works.length - 1 ? 0 : slide + 1);
-        }, 8000);
+        }, 10000);
 
         return () => clearInterval(interval);
     });
 
     const works = [
         {
-            title: 'Project 1',
+            title: 'GPT-3 Project',
             description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.',
-            image: 'https://picsum.photos/200/400',
+            image: '../src/assets/gpt3laptop.png',
         },
         {
-            title: 'Project 2',
+            title: 'Hoobank',
             description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.',
-            image: 'https://picsum.photos/200/300',
+            image: '../src/assets/hoolaptop.png',
         },
         {
-            title: 'Project 3',
+            title: 'Insightify',
             description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.',
-            image: 'https://picsum.photos/200/500',
+            image: '../src/assets/insightifylaptop.png',
         },
     ]
 
@@ -71,9 +71,9 @@ const Works = () => {
             <div className='carousel mt-10 w-full md:overflow-x-auto place-self-center flex flex-col justify-start items-start'>
                 <div className='inner-carousel flex flex-col md:flex-row justify-start items-center gap-y-6 md:gap-y-0 md:gap-x-6'>
                     {works.map((work, index) => (
-                        <div className={`${slide === index ? 'flex flex-col justify-start items-start project w-full md:w-[60vw]' : 'md:hidden'} transition ease-in-out bg-white bg-opacity-10 backdrop-filter backdrop-blur-lg z-0 px-4 pb-4`} key={index}>
+                        <div className={`${slide === index ? 'flex flex-col justify-start items-start project w-full md:w-[80vw]' : 'md:hidden'} transition ease-in-out bg-white bg-opacity-10 backdrop-filter backdrop-blur-lg z-0 px-4 pb-4 pt-2`} key={index}>
                             <div className='flex flex-row w-full justify-between'>
-                                <h1 className='text-[2.5rem] text-start'>{work.title}</h1>
+                                <h1 className='text-[2rem] md:text-[3rem] text-start'>{work.title}</h1>
                                 <div className='hidden md:flex flex-row justify-center items-center mt-3 gap-x-16'>
                                     <FaArrowLeft className='cursor-pointer' onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} onClick={prevSlide} />
                                     <span className='flex bottom-[10rem] left-[50%] gap-2'>
@@ -85,8 +85,9 @@ const Works = () => {
                                 </div>
                             </div>
 
-                            <img className='my-4 w-full max-h-[15rem]' src={work.image} alt={work.title} />
-                            <p className=''>{work.description}</p>
+                            <div className='w-full border-b-2 border-stone-500 mt-2' />
+                            <img className='my-4 w-[800px] lg:w-[25rem] 2xl:w-[1000px] lg:h-[35rem] 2xl:max-h-[35rem]' src={work.image} alt={work.title} />
+                            <p>{work.description}</p>
                             <button onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} className='mt-4 underline underline-offset-2 decoration-1'>More Details</button>
                         </div>
                     ))}

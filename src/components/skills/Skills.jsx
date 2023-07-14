@@ -4,7 +4,7 @@ import * as Icons from '../../assets/icons.js'
 
 const Skills = () => {
     return (
-        <div id='Skills' className='flex flex-col justify-start items-start px-5 md:px-[10vw] w-[100vw] mt-10 md:h-[55vh] overflow-hidden'>
+        <div id='Skills' className='flex flex-col justify-start items-start px-5 md:px-[10vw] w-[100vw] mt-10 md:mt-0 lg:mt-10 md:h-[75vh] xl:h-[50vh] overflow-hidden'>
             <h1 className='text-[3rem]'>Skills</h1>
             <div className='w-full border-b-2 border-stone-500' />
             <p className='mt-3 w-full'>Aside from my university education, I have been digging into online courses about <span className='text-[#4ABF6C] font-medium'>UI/UX Design</span> and cultivating an aesthetic that I want to explore deeper.
