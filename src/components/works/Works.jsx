@@ -68,8 +68,8 @@ const Works = () => {
             <div className='w-full border-b-2 border-stone-500' />
             <p className='mt-3'>I always want to keep myself busy, meaning a project is always in the proverbial oven. Have a look at some of the websites and designs I’ve worked on recently:</p>
 
-            <div className='carousel mt-10 w-full md:overflow-x-auto place-self-center flex flex-col justify-start items-start'>
-                <div className='inner-carousel flex flex-col md:flex-row justify-start items-center gap-y-6 md:gap-y-0 md:gap-x-6'>
+            <div className='carousel mt-10 w-full lg:w-[80%] md:overflow-x-auto flex flex-col justify-start items-start'>
+                <div className='inner-carousel w-full flex flex-col md:flex-row justify-start items-center gap-y-6 md:gap-y-0 md:gap-x-6'>
                     {works.map((work, index) => (
                         <div className={`${slide === index ? 'flex flex-col justify-start items-start project w-full md:w-[80vw]' : 'md:hidden'} transition ease-in-out bg-white bg-opacity-10 backdrop-filter backdrop-blur-lg z-0 px-4 pb-4 pt-2`} key={index}>
                             <div className='flex flex-row w-full justify-between'>
@@ -86,9 +86,9 @@ const Works = () => {
                             </div>
 
                             <div className='w-full border-b-2 border-stone-500 mt-2' />
-                            <img className='my-4 w-[800px] lg:w-[25rem] 2xl:w-[1000px] lg:h-[35rem] 2xl:max-h-[35rem]' src={work.image} alt={work.title} />
+                            <img className='my-4 w-[800px] lg:w-[35rem] 2xl:w-[45rem] lg:h-[25rem]' src={work.image} alt={work.title} />
                             <p>{work.description}</p>
-                            <button onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} className='mt-4 underline underline-offset-2 decoration-1'>More Details</button>
+                            <button onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} className='mt-4 py-3 px-8 border-[1px]'>More Details</button>
                         </div>
                     ))}
                 </div>
