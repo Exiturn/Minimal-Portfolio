@@ -1,6 +1,8 @@
 import toast, { Toaster } from 'react-hot-toast';
+import { useContext, useEffect } from 'react';
 import 'react-custom-alert/dist/index.css';
 
+import { HoverContext } from '../utils/HoverContext'
 
 import Navbar from '../components/navbar/Navbar'
 import Mouse from '../components/mouse/mouse'
@@ -9,9 +11,14 @@ import About from '../components/about/About'
 import Works from '../components/works/Works'
 import Skills from '../components/skills/Skills'
 import Contact from '../components/contact/Contact'
-import Project from '../pages/Project'
 
 const Home = () => {
+    const { handleHover, handleLeave, handleClick } = useContext(HoverContext);
+
+    useEffect(() => {
+        handleClick();
+    }, []);
+
     return (
         <>
             <Navbar />

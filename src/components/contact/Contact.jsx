@@ -78,7 +78,7 @@ const Contact = () => {
     }
 
     return (
-        <div id='Contact' className='flex flex-col justify-start items-start px-5 pb-5 md:px-[10vw] min-w-[100vw] min-h-auto md:min-h-[100vh] mt-[6rem]'>
+        <div id='Contact' className='flex flex-col justify-start items-start px-5 pb-5 md:px-[10vw] min-w-[100vw] min-h-auto md:min-h-[100vh] mt-[5rem]'>
             <h1 className='text-[3rem]'>Contact Me</h1>
             <div className='w-full border-b-2 border-stone-500' />
             <p className='mt-4'>Feel free to reach out if you’re looking for a developer, have a question about my projects or if you want to know more about me:</p>

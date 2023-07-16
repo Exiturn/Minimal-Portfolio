@@ -25,7 +25,7 @@ const Hero = () => {
                     style={{
                         whiteSpace: `pre-line`
                     }}
-                    sequence={[3000, `${lines[0]}`, 500, `${lines[1]}`, 500, `${lines[2]}`, 500, `${lines[3]}`]}
+                    sequence={[3000, `${lines[0]}`, 250, `${lines[1]}`, 250, `${lines[2]}`, 250, `${lines[3]}`]}
                     speed={80}
                 />
             </p>
@@ -36,7 +36,7 @@ const Hero = () => {
                         fontSize: `6rem`,
                     }}
                     sequence={["Hi, I'm Bryan Magistrado."]}
-                    speed={40}
+                    speed={60}
                 />
             </h1>
             <p className='hidden md:block mt-5'>
@@ -45,7 +45,7 @@ const Hero = () => {
                         fontSize: `1.5rem`,
                         whiteSpace: `pre-line`
                     }}
-                    sequence={[1800, `${lines[0]}`, 500, `${lines[1]}`, 500, `${lines[2]}`, 500, `${lines[3]}`]}
+                    sequence={[1500, `${lines[0]}`, 250, `${lines[1]}`, 250, `${lines[2]}`, 250, `${lines[3]}`]}
                     speed={80}
                 />
             </p>

@@ -1,7 +1,6 @@
 import React, { useEffect, useRef, useContext, useState } from 'react'
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { gsap } from 'gsap';
 import { FaArrowRight, FaArrowLeft } from 'react-icons/fa'
+import { Link } from 'react-router-dom';
 
 import { HoverContext } from '../../utils/HoverContext';
 
@@ -22,16 +21,19 @@ const Works = () => {
             title: 'GPT-3 Project',
             description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.',
             image: '../src/assets/gpt3laptop.png',
+            id: 'gpt3'
         },
         {
             title: 'Hoobank',
             description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.',
             image: '../src/assets/hoolaptop.png',
+            id: 'hoobank'
         },
         {
             title: 'Insightify',
             description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.',
             image: '../src/assets/insightifylaptop.png',
+            id: 'insightify'
         },
     ]
 
@@ -88,12 +90,14 @@ const Works = () => {
                             <div className='w-full border-b-2 border-stone-500 mt-2' />
                             <img className='my-4 w-[800px] lg:w-[35rem] 2xl:w-[45rem] lg:h-[25rem]' src={work.image} alt={work.title} />
                             <p>{work.description}</p>
-                            <button onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} className='mt-4 py-3 px-8 border-[1px]'>More Details</button>
+                            <button onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} className='mt-4 py-3 px-8 border-[1px]'>
+                                <Link to={{pathname: `/project`}} state={ works }>More Details</Link>
+                        </button>
                         </div>
                     ))}
-                </div>
             </div>
         </div>
+        </div >
     )
 }
 
