@@ -18,14 +18,14 @@ const ProjectNav = () => {
   };
 
   return (
-    <div className="flex flex-col justify-center items-start pt-[3vh] mx-5 md:mx-[10vw]">
+    <div className="flex flex-row md:flex-col justify-start md:justify-center items-start pt-[3vh] mx-5 md:mx-[10vw] gap-x-8">
       <img
         className="min-w-[40px] min-h-[40px] w-[60px] md:w-[80px] h-[60px] md:h-[60px]"
         src={avatar}
         alt="avatar"
       />
       <button
-        className="mt-10 text-[1.5rem] underline decoration-[1.5px] underline-offset-2"
+        className="md:mt-10 text-[1.5rem] underline decoration-[1px] underline-offset-2 place-self-center md:place-self-start"
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
       >

@@ -6,25 +6,21 @@ import "./Navbar.css";
 import { HoverContext } from "../../utils/HoverContext";
 
 const Navbar = () => {
-  const { isHovered, handleHover, handleLeave, cursorPosition } =
+  const { handleHover, handleLeave } =
     useContext(HoverContext);
   const [active, setActive] = useState("");
   const [isOpen, setIsOpen] = useState(false);
 
   const handleNav = () => {
-    console.log("handleNav called");
-    console.log("isOpen is", isOpen);
     setIsOpen(!isOpen);
   };
 
   const handleMouseEnter = () => {
     handleHover();
-    console.log("handleMouseEnter called");
   };
 
   const handleMouseLeave = () => {
     handleLeave();
-    console.log("handleMouseLeave called");
   };
 
   useEffect(() => {

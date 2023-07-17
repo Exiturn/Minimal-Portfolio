@@ -3,6 +3,7 @@ import { FaArrowRight, FaArrowLeft } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
 import { HoverContext } from "../../utils/HoverContext";
+import projects from "./projects.js";
 
 const Works = () => {
   const { handleHover, handleLeave, handleClick } = useContext(HoverContext);
@@ -10,44 +11,20 @@ const Works = () => {
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setSlide(slide === works.length - 1 ? 0 : slide + 1);
+      setSlide(slide === projects.length - 1 ? 0 : slide + 1);
     }, 10000);
 
     return () => clearInterval(interval);
   });
 
-  const works = [
-    {
-      title: "GPT-3 Project",
-      description:
-        "A fully responsive, Modern UI/UX website using React.js, styled with TailwindCSS and CSS",
-      image: "../src/assets/gpt3laptop.png",
-      id: "gpt3",
-    },
-    {
-      title: "Hoobank",
-      description:
-        "This is a responsive website built with React.js, Vite and styled with TailwindCSS.",
-      image: "../src/assets/hoolaptop.png",
-      id: "hoobank",
-    },
-    {
-      title: "Insightify",
-      description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
-      image: "../src/assets/insightifylaptop.png",
-      id: "insightify",
-    },
-  ];
-
   const nextSlide = () => {
-    setSlide(slide === works.length - 1 ? 0 : slide + 1);
+    setSlide(slide === projects.length - 1 ? 0 : slide + 1);
     console.log("nextSlide called");
     handleClick();
   };
 
   const prevSlide = () => {
-    setSlide(slide === 0 ? works.length - 1 : slide - 1);
+    setSlide(slide === 0 ? projects.length - 1 : slide - 1);
     console.log("prevSlide called");
     handleClick();
   };
@@ -82,7 +59,7 @@ const Works = () => {
 
       <div className="carousel mt-10 w-full lg:w-[80%] md:overflow-x-auto flex flex-col justify-start items-start">
         <div className="inner-carousel w-full flex flex-col md:flex-row justify-start items-center gap-y-6 md:gap-y-0 md:gap-x-6">
-          {works.map((work, index) => (
+          {projects.map((work, index) => (
             <div
               className={`${
                 slide === index
@@ -103,7 +80,7 @@ const Works = () => {
                     onClick={prevSlide}
                   />
                   <span className="flex bottom-[10rem] left-[50%] gap-2">
-                    {works.map((work, index) => (
+                    {projects.map((work, index) => (
                       <button
                         className={`rounded-full ${
                           index === slide ? "bg-white" : "bg-gray-500"
@@ -136,7 +113,7 @@ const Works = () => {
                 onMouseLeave={handleMouseLeave}
                 className="mt-4 py-3 px-8 border-[1px]"
               >
-                <Link to={{ pathname: `/project` }} state={[works, slide]}>
+                <Link to={{ pathname: `/project` }} state={[work, slide]}>
                   More Details
                 </Link>
               </button>
