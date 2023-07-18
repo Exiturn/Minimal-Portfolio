@@ -4,7 +4,7 @@ import "./mouse.css";
 
 import { HoverContext } from "../../utils/HoverContext";
 
-const Mouse = () => {
+const mouse = () => {
   const { isHovered, cursorPosition } = React.useContext(HoverContext);
   const { x, y } = cursorPosition;
 
@@ -47,4 +47,4 @@ const Mouse = () => {
   return <div className={`hidden md:block cursor`} style={cursorStyle}></div>;
 };
 
-export default Mouse;
+export default mouse;
