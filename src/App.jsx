@@ -6,10 +6,12 @@ import { HoverContextProvider } from "./utils/HoverContext";
 import Circle from "./components/backgroundCircle/Circle";
 import Project from "./pages/Project";
 import Home from "./pages/Home";
+import ScrollToTop from "./components/scroll/ScrollToTop";
 
 function App() {
   return (
     <Router>
+      <ScrollToTop />
       <HoverContextProvider>
         <Routes>
           <Route index element={<Home />} />

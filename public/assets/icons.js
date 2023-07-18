@@ -8,6 +8,7 @@ import three from './three.svg';
 import tailwind from './tailwind.svg';
 import github from './github.png';
 import linkedin from './linkedin.png';
+import framer from './framermotion.svg';
 
 export {
     css3,
@@ -19,5 +20,6 @@ export {
     three,
     tailwind,
     github,
-    linkedin
+    linkedin,
+    framer
 };
