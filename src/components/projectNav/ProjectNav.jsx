@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import { Link } from "react-router-dom";
-import avatar from "../../assets/avatar.svg";
+import avatar from "../../../public/assets/avatar.svg";
 
 import { HoverContext } from "../../utils/HoverContext";
 

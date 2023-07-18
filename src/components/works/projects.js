@@ -1,22 +1,17 @@
-import tailwind from "../../assets/tailwind.svg";
-import react from "../../assets/react.svg";
-import html5 from "../../assets/html5.svg";
-import css3 from "../../assets/css3.svg";
-import three from "../../assets/three.svg";
-import framermotion from "../../assets/framermotion.svg";
+import * as icons from "../../../public/assets/icons";
 
 const projects = [
     {
       title: "GPT-3 Project",
       description:
         "A fully responsive, Modern UI/UX website using React.js, styled with TailwindCSS and CSS.",
-      image: "../src/assets/gpt3laptop.png",
-      showcase: "../src/assets/gpt3showcase.png",
+      image: "../../../public/assets/gpt3laptop.png",
+      showcase: "../../../public/assets/gpt3showcase.png",
       stack: [
-        html5,
-        css3,
-        tailwind,
-        react,
+        icons.html5,
+        icons.css3,
+        icons.tailwind,
+        icons.react,
       ],
       fullDescription:
       `GPT-3 was one of the first few frontend projects I worked on, and it was a great way to learn how to use React and Tailwind together. It was the project that really
@@ -38,13 +33,13 @@ const projects = [
       title: "3D Portfolio",
       description:
         "A 3D personal portfolio created using React.js, Vite, TailwindCSS and Three.js",
-      image: "../src/assets/3dlaptop.png",
-      showcase: "../src/assets/3dshowcase.png",
+      image: "../../../public/assets/3dlaptop.png",
+      showcase: "../../../public/assets/3dshowcase.png",
       stack: [
-        react,
-        tailwind,
-        framermotion,
-        three,
+        icons.react,
+        icons.tailwind,
+        icons.framermotion,
+        icons.three,
       ],
       fullDescription:
       `This 3D portfolio was a project I took on to learn more about how 3D models can be a part of UX interactivity, in turn learning more about how Three.js and its intricacies. 
@@ -64,14 +59,14 @@ const projects = [
     {
       title: "Insightify",
       description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
-      image: "../src/assets/insightifylaptop.png",
-      showcase: "../src/assets/insightifyshowcase.png",
+        "A responsive, minimalistic website built with React.js, Vite and styled with TailwindCSS.",
+      image: "../../../public/assets/insightifylaptop.png",
+      showcase: "../../../public/assets/insightifyshowcase.png",
       stack: [
-        html5,
-        css3,
-        tailwind,
-        react,
+        icons.html5,
+        icons.css3,
+        icons.tailwind,
+        icons.react,
       ],
       fullDescription: 
       "Insightify is a responsive, minimalistic website built with React.js, Vite and styled with TailwindCSS. It was a front-end project to test my UI/UX design skills as I designed the layout from scratch using Figma. This project is special to me as it was one of the first that I designed myself, and I could really hone in on what I enjoyed doing.",

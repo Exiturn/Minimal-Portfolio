@@ -1,6 +1,6 @@
 import React from "react";
 
-import * as Icons from "../../assets/icons.js";
+import * as Icons from "../../../public/assets/icons";
 
 const Skills = () => {
   return (

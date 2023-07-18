@@ -5,8 +5,7 @@ import { HoverContext } from "../../utils/HoverContext";
 
 import "react-custom-alert/dist/index.css";
 
-import github from "../../assets/github.png";
-import linkedin from "../../assets/linkedin.png";
+import { github, linkedin } from "../../../public/assets/icons";
 
 const Contact = () => {
   const formRef = useRef();
