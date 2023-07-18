@@ -1,12 +1,13 @@
 import * as icons from "../../../public/assets/icons";
+import * as showcase from "../../../public/assets/showcase";
 
 const projects = [
     {
       title: "GPT-3 Project",
       description:
         "A fully responsive, Modern UI/UX website using React.js, styled with TailwindCSS and CSS.",
-      image: "../../../public/assets/gpt3laptop.png",
-      showcase: "../../../public/assets/gpt3showcase.png",
+      image: showcase.gpt3laptop,
+      showcase: showcase.gpt3showcase,
       stack: [
         icons.html5,
         icons.css3,
@@ -33,8 +34,8 @@ const projects = [
       title: "3D Portfolio",
       description:
         "A 3D personal portfolio created using React.js, Vite, TailwindCSS and Three.js",
-      image: "../../../public/assets/3dlaptop.png",
-      showcase: "../../../public/assets/3dshowcase.png",
+      image: showcase.portfoliolaptop,
+      showcase: showcase.portfolioshowcase,
       stack: [
         icons.react,
         icons.tailwind,
@@ -60,8 +61,8 @@ const projects = [
       title: "Insightify",
       description:
         "A responsive, minimalistic website built with React.js, Vite and styled with TailwindCSS.",
-      image: "../../../public/assets/insightifylaptop.png",
-      showcase: "../../../public/assets/insightifyshowcase.png",
+      image: showcase.insightifylaptop,
+      showcase: showcase.insightifyshowcase,
       stack: [
         icons.html5,
         icons.css3,
