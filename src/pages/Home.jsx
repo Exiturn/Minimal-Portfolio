@@ -5,7 +5,7 @@ import "react-custom-alert/dist/index.css";
 import { HoverContext } from "../utils/HoverContext";
 
 import Navbar from "../components/navbar/Navbar";
-import Mouse from "../components/mouse/mouse";
+import Mouse from "../components/mouse/Mouse";
 import Hero from "../components/hero/Hero";
 import About from "../components/about/About";
 import Works from "../components/works/Works.jsx";

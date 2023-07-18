@@ -1,5 +1,5 @@
 import React, { useEffect, useContext } from "react";
-import Mouse from "../components/mouse/mouse";
+import Mouse from "../components/mouse/Mouse";
 import { HoverContext } from "../utils/HoverContext";
 import ProjectNav from "../components/projectNav/ProjectNav";
 import { gsap } from "gsap";
