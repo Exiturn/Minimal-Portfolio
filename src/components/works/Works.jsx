@@ -19,13 +19,11 @@ const Works = () => {
 
   const nextSlide = () => {
     setSlide(slide === projects.length - 1 ? 0 : slide + 1);
-    console.log("nextSlide called");
     handleClick();
   };
 
   const prevSlide = () => {
     setSlide(slide === 0 ? projects.length - 1 : slide - 1);
-    console.log("prevSlide called");
     handleClick();
   };
 
@@ -36,12 +34,10 @@ const Works = () => {
 
   const handleMouseEnter = () => {
     handleHover();
-    console.log("handleMouseEnter called");
   };
 
   const handleMouseLeave = () => {
     handleLeave();
-    console.log("handleMouseLeave called");
   };
 
   return (
