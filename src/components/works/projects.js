@@ -39,7 +39,7 @@ const projects = [
       stack: [
         icons.react,
         icons.tailwind,
-        icons.framermotion,
+        icons.framer,
         icons.three,
       ],
       fullDescription:

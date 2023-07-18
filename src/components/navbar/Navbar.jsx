@@ -1,4 +1,5 @@
 import React, { useContext, useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import { CgMenuGridR, CgClose } from "react-icons/cg";
 import avatar from "../../../public/assets/avatar.svg";
 import { gsap } from "gsap";
@@ -23,6 +24,10 @@ const Navbar = () => {
     handleLeave();
   };
 
+  const handleLinkClick = (routeName) => {
+    setActive(routeName);
+  };
+
   useEffect(() => {
     gsap.set(".nav", { opacity: 0 });
 
@@ -31,6 +36,15 @@ const Navbar = () => {
       duration: 2,
     });
   }, []);
+
+  useEffect(() => {
+    if (active) {
+      const section = document.getElementById(active);
+      if (section) {
+        section.scrollIntoView({ behavior: "smooth" });
+      }
+    }
+  }, [active]);
 
   return (
     <>
@@ -65,7 +79,7 @@ const Navbar = () => {
             onMouseLeave={handleMouseLeave}
             className="link transition duration-[0.3s] ease-in-out cursor-pointer"
           >
-            <a href={`#${active}`} onClick={() => setActive("Works")}>
+            <a href={`#${active}`} onClick={() => handleLinkClick("Works")}>
               Works
             </a>
           </li>
