@@ -95,6 +95,7 @@ const Contact = () => {
           <a
             className="italic underline"
             href="https://linkedin.com/in/bryan-magistrado"
+            target="_blank"
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}
           >
@@ -106,6 +107,7 @@ const Contact = () => {
           <a
             className="italic underline"
             href="https://github.com/Exiturn"
+            target="_blank"
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}
           >
