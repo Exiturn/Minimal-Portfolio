@@ -38,7 +38,7 @@ const mouse = () => {
     gsap.to(".cursor", {
       x: x,
       y: y,
-      duration: 0.15,
+      duration: 0.05,
     });
   };
 
