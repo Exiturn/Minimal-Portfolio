@@ -43,7 +43,7 @@ const projects = [
         icons.three,
       ],
       fullDescription:
-      `This 3D portfolio was a project I took on to learn more about how 3D models can be a part of UX interactivity, in turn learning more about how Three.js and its intricacies. 
+      `This 3D portfolio was a project I took on to learn more about how 3D models can be a part of UX interactivity, in turn learning more about how Three.js works and its intricacies. 
       It was a very satisfying project to work through as my game development background in university was able to think through texture mapping, model optimization, lighting and canvases. 
       Using the 3D matrix to place the model in the canvas and rotate it was a fun challenge to work through, and I'm excited to see how I can use this knowledge in the future.`,
       id: "3dportfolio",
