@@ -2,7 +2,7 @@
     "redirects": [
       {
         "source": "/project/:id",
-        "destination": "bryanmagistrado.vercel.app"
+        "destination": ""
       }
     ]
   }
