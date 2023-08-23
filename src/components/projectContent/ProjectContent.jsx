@@ -1,11 +1,10 @@
 import React, { useEffect, useContext } from "react";
 import { HoverContext } from "../../utils/HoverContext";
 import projects from "../works/projects";
-import { useParams } from "react-router-dom";
 
 const ProjectContent = ({ data }) => {
-  const { id } = useParams();
   const { handleHover, handleLeave } = useContext(HoverContext);
+  const id = data;
 
   const handleMouseEnter = () => {
     handleHover();

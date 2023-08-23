@@ -4,8 +4,10 @@ import { HoverContext } from "../utils/HoverContext";
 import ProjectNav from "../components/projectNav/ProjectNav";
 import { gsap } from "gsap";
 import ProjectContent from "../components/projectContent/ProjectContent";
+import { useParams } from "react-router-dom";
 
 const Project = () => {
+  const { id } = useParams();
   const { handleClick } = useContext(HoverContext);
 
   useEffect(() => {
@@ -28,7 +30,7 @@ const Project = () => {
     <div className="project place-self-center">
       <Mouse />
       <ProjectNav />
-      <ProjectContent />
+      <ProjectContent data={id} />
     </div>
   );
 };
