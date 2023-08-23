@@ -4,12 +4,12 @@ import { HoverContext } from "../utils/HoverContext";
 import ProjectNav from "../components/projectNav/ProjectNav";
 import { gsap } from "gsap";
 import ProjectContent from "../components/projectContent/ProjectContent";
-import { useLocation } from "react-router-dom";
+import { useParams } from "react-router-dom";
 
 const Project = () => {
   const { handleClick } = useContext(HoverContext);
 
-  const location = useLocation();
+  const { id } = useParams();
 
   useEffect(() => {
     handleClick();
@@ -31,7 +31,7 @@ const Project = () => {
     <div className="project place-self-center">
       <Mouse />
       <ProjectNav />
-      <ProjectContent data={location} />
+      <ProjectContent data={id} />
     </div>
   );
 };

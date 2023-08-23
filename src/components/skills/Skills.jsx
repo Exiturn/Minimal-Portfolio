@@ -6,7 +6,7 @@ const Skills = () => {
   return (
     <div
       id="Skills"
-      className="flex flex-col justify-start items-start px-5 md:px-[10vw] w-[100vw] mt-10 md:mt-0 lg:mt-10 md:h-[75vh] xl:h-[50vh] overflow-hidden"
+      className="flex flex-col justify-start items-start px-5 md:px-[10vw] w-[100vw] mt-[7.5rem] overflow-hidden"
     >
       <h1 className="text-[3rem]">Skills</h1>
       <div className="w-full border-b-2 border-stone-500" />
@@ -46,6 +46,10 @@ const Skills = () => {
           <img className="w-[40px] h-[40px]" src={Icons.react} alt="react" />
           <h2 className="font-medium">React</h2>
         </div>
+        <div className="flex flex-row justify-start items-center gap-2 max-w-[10rem] w-auto h-auto">
+          <img className="w-[40px] h-[40px]" src={Icons.nextjs} alt="nextjs" />
+          <h2 className="font-medium">Next.js 13</h2>
+        </div>
         <div className="flex flex-row justify-start items-center max-w-[10rem] gap-2 w-auto h-auto">
           <img
             className="w-[40px] h-[40px]"
@@ -65,6 +69,10 @@ const Skills = () => {
         <div className="flex flex-row justify-start items-center gap-2 max-w-[10rem] w-auto h-auto">
           <img className="w-[40px] h-[40px]" src={Icons.git} alt="github" />
           <h2 className="font-medium">Github Desktop</h2>
+        </div>
+        <div className="flex flex-row justify-start items-center gap-2 max-w-[10rem] w-auto h-auto">
+          <img className="w-[40px] h-[40px]" src={Icons.mongodb} alt="MongoDB" />
+          <h2 className="font-medium text-[14px] md:text-[1rem]">MongoDB</h2>
         </div>
       </div>
     </div>

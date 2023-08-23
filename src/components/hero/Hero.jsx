@@ -20,7 +20,7 @@ const Hero = () => {
             fontSize: `3.15rem`,
           }}
           sequence={[1000, "Hi, I'm Bryan Magistrado."]}
-          speed={40}
+          speed={70}
         />
       </h1>
       <p className="mt-2 md:hidden block">
@@ -38,7 +38,7 @@ const Hero = () => {
             250,
             `${lines[3]}`,
           ]}
-          speed={80}
+          speed={100}
         />
       </p>
 
@@ -48,7 +48,7 @@ const Hero = () => {
             fontSize: `6rem`,
           }}
           sequence={["Hi, I'm Bryan Magistrado."]}
-          speed={60}
+          speed={80}
         />
       </h1>
       <p className="hidden md:block mt-5">
@@ -67,7 +67,7 @@ const Hero = () => {
             250,
             `${lines[3]}`,
           ]}
-          speed={80}
+          speed={90}
         />
       </p>
     </div>

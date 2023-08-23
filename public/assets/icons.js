@@ -9,6 +9,8 @@ import tailwind from './tailwind.svg';
 import github from './github.png';
 import linkedin from './linkedin.png';
 import framer from './framermotion.svg';
+import mongodb from './mongodb.svg'
+import nextjs from './nextjs.png'
 
 export {
     css3,
@@ -21,5 +23,7 @@ export {
     tailwind,
     github,
     linkedin,
-    framer
+    framer,
+    mongodb,
+    nextjs
 };

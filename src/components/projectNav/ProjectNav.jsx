@@ -9,12 +9,10 @@ const ProjectNav = () => {
 
   const handleMouseEnter = () => {
     handleHover();
-    console.log("handleMouseEnter called");
   };
 
   const handleMouseLeave = () => {
     handleLeave();
-    console.log("handleMouseLeave called");
   };
 
   return (

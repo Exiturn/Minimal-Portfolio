@@ -37,15 +37,6 @@ const Navbar = () => {
     });
   }, []);
 
-  useEffect(() => {
-    if (active) {
-      const section = document.getElementById(active);
-      if (section) {
-        section.scrollIntoView({ behavior: "smooth" });
-      }
-    }
-  }, [active]);
-
   return (
     <>
       <div className="nav flex flex-row justify-between items-center pt-[3vh] mx-5 md:mx-[10vw]">

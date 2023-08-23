@@ -43,7 +43,7 @@ const Works = () => {
   return (
     <div
       id="Works"
-      className="flex flex-col justify-start items-start px-5 md:px-[10vw] min-w-[100vw] md:min-h-[85vh] overflow-hidden relative mt-10"
+      className="flex flex-col justify-start items-start px-5 md:px-[10vw] min-w-[100vw] overflow-hidden relative mt-[7.5rem]"
     >
       <h1 className="text-[3rem] flex justify-center items-center">Works</h1>
       <div className="w-full border-b-2 border-stone-500" />
@@ -53,7 +53,7 @@ const Works = () => {
         worked on recently:
       </p>
 
-      <div className="carousel mt-10 w-full lg:w-[80%] md:overflow-x-auto flex flex-col justify-start items-start">
+      <div className="carousel mt-10 w-full lg:w-[80%] xl:w-[90%] md:overflow-x-auto flex flex-col justify-start items-start">
         <div className="inner-carousel w-full flex flex-col md:flex-row justify-start items-center gap-y-6 md:gap-y-0 md:gap-x-6">
           {projects.map((work, index) => (
             <div
@@ -99,7 +99,7 @@ const Works = () => {
 
               <div className="w-full border-b-2 border-stone-500 mt-2" />
               <img
-                className="my-4 w-[800px] lg:w-[35rem] 2xl:w-[45rem] lg:h-[25rem]"
+                className="my-4 w-[800px] lg:w-[45rem] lg:h-[25rem] 2xl:w-[45rem] "
                 src={work.image}
                 alt={work.title}
               />
@@ -109,7 +109,7 @@ const Works = () => {
                 onMouseLeave={handleMouseLeave}
                 className="mt-4 py-3 px-8 border-[1px]"
               >
-                <Link to={{ pathname: `/project` }} state={[work, slide]}>
+                <Link to={{ pathname: `/project/${work.index}` }} state={[work, slide]}>
                   More Details
                 </Link>
               </button>

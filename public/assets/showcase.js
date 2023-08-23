@@ -4,6 +4,8 @@ import insightifylaptop from "./insightifylaptop.png";
 import insightifyshowcase from "./insightifyshowcase.png";
 import portfoliolaptop from "./portfoliolaptop.png";
 import portfolioshowcase from "./portfolioshowcase.png";
+import promptolaptop from "./promptolaptop.png";
+import promptoshowcase from "./promptoshowcase.png"
 
 export {
     gpt3laptop,
@@ -11,6 +13,8 @@ export {
     insightifylaptop,
     insightifyshowcase,
     portfoliolaptop,
-    portfolioshowcase
+    portfolioshowcase,
+    promptolaptop,
+    promptoshowcase,
 }
 

@@ -5,7 +5,7 @@ import "./mouse.css";
 import { HoverContext } from "../../utils/HoverContext";
 
 const mouse = () => {
-  const { isHovered, cursorPosition } = React.useContext(HoverContext);
+  const { isHovered, cursorPosition } = useContext(HoverContext);
   const { x, y } = cursorPosition;
 
   useEffect(() => {
