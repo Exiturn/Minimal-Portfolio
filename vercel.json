@@ -2,7 +2,7 @@
     "redirects": [
       {
         "source": "/project/:id",
-        "destination": "/index.html"
+        "destination": "/project/:id"
       }
     ]
   }
