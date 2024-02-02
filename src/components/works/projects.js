@@ -1,10 +1,25 @@
-import * as icons from "../../../public/assets/icons";
-import * as showcase from "../../../public/assets/showcase";
+import * as icons from "../../assets/icons";
+import * as showcase from "../../assets/showcase";
 
 const projects = [
   {
-    title: "Prompto",
+    title: "ADV/MNSTRY",
     index: 0,
+    description:
+      "A level 3 frontend practice challenge based on the basicagency website. Built with Next.js 13, Typescript, TailwindCSS, Gsap and Framer Motion.",
+    image: showcase.advdesktop,
+    showcase: showcase.advshowcase,
+    stack: [icons.react, icons.tailwind, icons.framer, icons.nextjs],
+    fullDescription: `This level 3 frontend challenge was a fun one. Not only was it of a website I already know from scouting pretty but minimal web designs but because it also matches the exact design aesthtic I want to be known for. I happened to come across this challenge on Frontend Mentor one day and it has been a great way to dissect and reverse engineer how one of my inspirational websites is developed. Design wise, I have learned a lot from deep diving into how they integrated some of their frontend features like their colour transition which I am still trying to figure out. All in all, it has been a whole lot of fun.`,
+    id: "advmnstry",
+    stackDescription: `The tech stack I chose was based on learning Next.js along with my other go-to's in development like TailwindCSS and React (of course). This isn't my first time using Next.js nor will it be my last, as it provides a lot of general quality of life improvements over vanilla react including project structure and SEO optimizations. I was mainly after the project structure. Framer-motion and GSAP were both used for some of the animations included although minimal, i'm definitely getting used to those libraries, both are quite intuitive.`,
+    learned: `Creating this project was a lot of fun, it truly made my web designer happy to be able to work with such a beautifully made website. Especially this time, being able to
+       understand the methods of implementation of some of the features. It still proves to be a challenge which I appreciate as I am still trying to figure out the last transition animation.`,
+    link: "https://adv-mnstry.vercel.app/",
+  },
+  {
+    title: "Prompto",
+    index: 1,
     description:
       "A fullstack application built using the MERN stack which includes Next.js 13 that uses next-auth with Google OAuth, full CRUD functionality, a dedicated database using MongoDB with Mongoose ODM and styled with TailwindCSS. ",
     image: showcase.promptolaptop,
@@ -25,39 +40,19 @@ const projects = [
     link: "https://inprompto.vercel.app",
   },
   {
-    title: "3D Portfolio",
-    index: 1,
-    description:
-      "A 3D personal portfolio created using React.js, Vite, TailwindCSS and Three.js",
-    image: showcase.portfoliolaptop,
-    showcase: showcase.portfolioshowcase,
-    stack: [icons.react, icons.tailwind, icons.framer, icons.three],
-    fullDescription: `This 3D portfolio was a project I took on to learn more about how 3D models can be a part of UX interactivity, in turn learning more about how Three.js works and its intricacies. 
-      It was a very satisfying project to work through as my game development background in university was able to think through texture mapping, model optimization, lighting and canvases. 
-      Using the 3D matrix to place the model in the canvas and rotate it was a fun challenge to work through, and I'm excited to see how I can use this knowledge in the future.`,
-    id: "3dportfolio",
-    stackDescription: `With 3D models and interactivity being the main focus of this project, I chose React, Tailwind for styling and the main stars of the show, Three.js and Framer Motion.
-       React was an obvious choice for me, It is a single page application so implementation with React was a breeze. Nothing too fancy so Next.js wasn't necessary.
-       Tailwind is my bread and butter for styling, I use it with pretty much every project I do now.
-       Framer motion was a new library for me, as GSAP was what I was used to before this, but now I'm torn between the two, I guess it's better to be spoiled for choice than not. `,
-    learned: `Creating this project was a lot of fun, it truly made my inner game developer happy to be able to work with 3D models again. Especially this time, being able to
-       understand the math behind Three.js works because of my university background. Setting up the email form was a tough cookie to crack but I'm glad I got the chance to learn how to do it.`,
-    link: "https://bryanmagistrado3d.vercel.app/",
-  },
-  {
-    title: "Insightify",
+    title: "Churchside Antiques",
     index: 2,
     description:
-      "A responsive, minimalistic website built with React.js, Vite and styled with TailwindCSS.",
-    image: showcase.insightifylaptop,
-    showcase: showcase.insightifyshowcase,
-    stack: [icons.html5, icons.css3, icons.tailwind, icons.react],
+      "A freelance project for Churchside Antiques built with Next.js 14 and styled with TailwindCSS.",
+    image: showcase.cadesktop,
+    showcase: showcase.cashowcase,
+    stack: [icons.react, icons.nextjs, icons.tailwind],
     fullDescription:
-      "Insightify is a responsive, minimalistic website built with React.js, Vite and styled with TailwindCSS. It was a front-end project to test my UI/UX design skills as I designed the layout from scratch using Figma. This project is special to me as it was one of the first that I designed myself, and I could really hone in on what I enjoyed doing.",
+      "Churchside Antiques is a freelance project I carried out for a client. This site was built using Next.js 14 (for SEO reasons), React and TailwindCSS. As this project was client-facing, I worked alongside them from the ground up. The design I built with his requirements and customer demographic in mind",
     id: "insightify",
-    stackDescription: `For Insightify, I chose Tailwind CSS, React, and Vite as the dream team for bringing my vision to life. Tailwind CSS's utility-first approach made it incredibly easy to design and style my project, saving time while maintaining a unique look. React's component-based structure allowed me to build a dynamic user interface with ease, while Vite's blazing-fast build times and hot module replacement accelerated my development workflow. The combination of these technologies provided the perfect toolkit for creating a sleek and efficient web app that I'm proud of. With this stack, I have a solid foundation to continue growing and expanding my project in the future.`,
-    learned: `With this project, I learned how to design a website from scratch using Figma, and how to implement said design. I am particularly proud of the use of framer motion to add a slight animation to the stylized clouds. With my aesthetic evolving continiously, I know I can revisit this in the future and potentially implement payment using stripe.`,
-    link: "https://insightify-react.vercel.app/",
+    stackDescription: `I went with my usual tech stack with this project as my client wanted his website to rank well for search engines. Therefore Next.js was my first thought due to having SEO optimizations off the bat with their server components. React and Tailwind are my used and most comfortable technologies so I went with what I knew.`,
+    learned: `Churchside Antiques was my first freelance project for a client, which means I am responsible for pretty much everything that comes with. This meant I was designer by day, developer by night and occasional SEO optimizer. This project taught me a lot about what a freelance web developer deals with on a day to day and very important lessons were learned because of it. Web developers are multi-faceted, we bring so many different skills and specializations, so much that there are teams based on said specializations. This makes me respect freelancers, a whole lot more.`,
+    link: "https://www.churchsideantiques.org.uk/",
   },
 ];
 

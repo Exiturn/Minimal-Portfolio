@@ -22,14 +22,14 @@ const ProjectContent = ({ data }) => {
       <button className="mt-4 py-3 px-8 border-[1px]" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}><a href={projects[id].link} target="_blank">Visit the site</a></button>
 
       <img
-        className="hidden md:block w-[60vw] place-self-center mt-10"
+        className="hidden md:block w-[45vw] place-self-center mt-10"
         src={projects[id].showcase}
-        alt="GPT3 Showcase"
+        alt="project showcase"
       />
       <img
         className="md:hidden place-self-center mt-10"
         src={projects[id].image}
-        alt="GPT3 Showcase Mobile"
+        alt="project showcase mobile"
       />
 
       <div className="flex flex-col-reverse md:flex-row justify-start items-start w-full mt-20 gap-x-[5vw]">

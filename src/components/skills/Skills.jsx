@@ -1,6 +1,6 @@
 import React from "react";
 
-import * as Icons from "../../../public/assets/icons";
+import * as Icons from "../../assets/icons";
 
 const Skills = () => {
   return (
@@ -17,12 +17,11 @@ const Skills = () => {
         cultivating an aesthetic that I want to explore deeper. I have also been
         teaching myself{" "}
         <span className="text-[#4ABF6C] font-medium">
-          React.js with TypeScript
+          React.js with TypeScript in Next.js
         </span>{" "}
-        by completing smaller projects such as my blog application.
+        by completing smaller projects such as my blog application and ADV/MNSTRY website.
         <br />
-        <br /> With UI/UX design, I have also been getting stuck into 3D web
-        animations using Spline and implementing it into my workflow.
+        <br /> With UI/UX design, I have also been getting stuck into prototyping app and web designs for my personal side projects using Figma.
       </p>
 
       <div className="grid md:grid-cols-3 lg:grid-cols-5 grid-cols-2 justify-start items-start gap-x-[3.5rem] md:gap-x-[2rem] xl:gap-x-[8rem] gap-y-[2rem] mt-10">
@@ -57,10 +56,6 @@ const Skills = () => {
             alt="tailwind"
           />
           <h2 className="font-medium">Tailwind CSS</h2>
-        </div>
-        <div className="flex flex-row justify-start items-center max-w-[10rem] gap-2 w-auto h-auto">
-          <img className="w-[30px] h-[30px]" src={Icons.three} alt="three.js" />
-          <h2 className="font-medium">Three.js</h2>
         </div>
         <div className="flex flex-row justify-start items-center max-w-[10rem] gap-2 w-auto h-auto">
           <img className="w-[40px] h-[40px]" src={Icons.figma} alt="figma" />

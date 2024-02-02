@@ -1,7 +1,7 @@
 import React, { useContext, useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { CgMenuGridR, CgClose } from "react-icons/cg";
-import avatar from "../../../public/assets/avatar.svg";
+import avatar from "../../assets/avatar.svg";
 import { gsap } from "gsap";
 import "./Navbar.css";
 import { HoverContext } from "../../utils/HoverContext";
